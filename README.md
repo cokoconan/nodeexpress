@@ -1,11 +1,11 @@
 # node.js express
 
-create express project!
+###create express project!
 $ express --session --ejs --css stylus myapp
 
-modules install!
+###modules install!
 $ cd myapp
 $ npm install
 
-generic-pool download !
+###generic-pool download !
 $ npm install generic-pool -save
