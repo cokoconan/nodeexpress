@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome Node.js</title>
+<meta name="keywords" content="free templates, website templates, CSS, XHTML" />
+<meta name="description" content="Simple Gray - Professional free XHTML/CSS template provided by templatemo.com" />
+<link href="/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+<!--  Free Web Templates by TemplateMo.com  -->
+  <div id="templatemo_header">
+    
+   	<div id="site_logo"></div>
+        
+		<div id="templatemo_menu">
+      		<div id="templatemo_menu_left"></div>
+            <ul>
+                  <li><a href="#" class="current">Home</a></li>
+                  <li><a href="#" class="last">Contact</a></li>
+            </ul>    	
+		</div> <!-- end of menu -->
+    
+    </div>  <!-- end of header -->
+</div> <!-- end of header wrapper -->
+
+<div id="templatemo_banner_wrapper">
+	<div id="templatemo_banner">
+    
+    	<div id="templatemo_banner_image">
+        	<div id="templatemo_banner_image_wrapper">
+            	<img src="views/images/templatemo_image_01.jpg" alt="image 1" />
+            </div>
+        </div>
+        
+        <div id="templatemo_banner_content">
+        	<div class="header_01">He narrator, an airplane pilot, crashes in the Sahara desert. </div>
+            <p>The crash badly damages his airplane and leaves the narrator with very little food or water. As he is worrying over his predicament, he is ... </p>
+            <div class="button_01"><a href="#">Read more</a></div>
+        </div>	
+    
+    	<div class="cleaner"></div>
+    </div> <!-- end of banner -->
+</div> <!-- end of banner wrapper -->
+
+<div id="templatemo_content_wrapper">
+	<div id="templatemo_content">
+    
+    	<div id="column_w530">
+        	
+            <div class="header_02">Welcome to our WEBSITE!</div>
+            
+           <table >
+				<tr>
+					<th>ID</th>
+					<th>NAME</th>
+					<th>PhoneNum.</th>
+					<th>Date</th>
+				</tr>
+						
+
+	
+				<% for(var i = 0; i<rows.length; i++){ %>
+
+						<tr>
+
+							<td><%= rows[i].id %></td>
+							<td><%= rows[i].name %></td>
+							<td><%= rows[i].phonenum %></td>
+							<td><%= rows[i].reg_date %></td>
+						</tr>
+		
+				<%	}	 %>
+	
+		   </table>
+            
+            <div class="cleaner"></div>
+        </div>
+        
+        <div id="column_w300">
+        
+        	<div class="header_03">Latest News</div>
+            
+            <div class="column_w300_section_01">
+            	<div class="news_image_wrapper">
+                	<img src="views/images/templatemo_image_02.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	<div class="news_date">OCT 29, 2048</div>
+                    <div class="header_04"><a href="#">While journeying</a></div>
+                    <p>While journeying, the narrator tells us, the little prince passes by neighboring...</p>
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="column_w300_section_01 even_color">
+            	<div class="news_image_wrapper">
+                	<img src="views/images/templatemo_image_03.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	<div class="news_date">OCT 28, 2048</div>
+                    <div class="header_04"><a href="#">asteroids and encounters</a></div>
+                    <p>asteroids and encounters for the first time the strange, narrow-minded world of grown-ups.</p>
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="column_w300_section_01">
+            	<div class="news_image_wrapper">
+                	<img src="views/images/templatemo_image_04.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	<div class="news_date">OCT 27, 2048</div>
+                    <div class="header_04"><a href="#">On the first six planets</a></div>
+                    <p>On the first six planets the little prince visits, he meets a king, a vain man,</p>
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="cleaner"></div>
+        </div>
+    
+    	<div class="cleaner"></div>
+    </div> <!-- end of content wrapper -->
+</div> <!-- end of content wrapper -->
+
+<div id="templatemo_footer_wrapper">
+
+	<div id="templatemo_footer">
+    	
+        <div class="section_w180">
+        	<div class="header_05">Services</div>
+            <div class="section_w180_content"> 
+            	<ul class="footer_menu_list">
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+             
+                </ul>
+			</div>
+        </div>
+        
+        <div class="section_w180">
+        	<div class="header_05">About</div>
+            <div class="section_w180_content">
+                <ul class="footer_menu_list">
+                    <li><a href="#">Nullam quis</a></li>
+              
+                </ul>
+            </div>
+        </div>
+                
+        <div class="section_w180">
+        	<div class="header_05">Cool links</div>
+            <div class="section_w180_content"> 
+                <ul class="footer_menu_list">
+                    <li><a href="#">Aenean vulputate</a></li>
+         
+                </ul>
+			</div>
+        </div>
+        
+        <div class="section_w180">
+	        <div class="header_05">Contact</div>
+            
+            <div class="section_w180_content">
+            
+                <ul class="footer_menu_list">
+                    <li><a href="#">Donec quam</a></li>
+        
+                </ul>
+			</div>
+        </div>
+        
+        <div class="section_w180">
+			<div class="header_05">Partners</div>  
+            <div class="section_w180_content">      
+                <ul class="footer_menu_list">
+                    <li><a href="#" target="_parent">CSS Templates</a></li>
+                </ul>
+			</div>
+        </div>
+        
+        <div class="margin_bottom_20"></div>
+        Copyright © 2048 <a href="#">Your Company Name</a> | <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+    <!--  Free CSS Templates by TemplateMo.com  -->
+</div> <!-- end of footer -->
+</html>

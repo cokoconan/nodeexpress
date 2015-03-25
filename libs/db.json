@@ -1,0 +1,7 @@
+{
+    "host": "52.0.82.179", 
+    "port": "3306", 
+    "user": "jesse",
+    "password": "jesse",
+    "database": "practice"
+}
