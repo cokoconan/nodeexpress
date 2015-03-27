@@ -50,14 +50,19 @@ server.listen(5004);
 
 app.get('/userlist', function(req, res) {
   	var listQuery = "SELECT * FROM USER ";		
-	getList(listQuery, res);		
+	getList(listQuery, '/views/index.ejs');		
+});
+
+app.get('/finduser/:name', function(req, res) {
+  	var listQuery = "SELECT * FROM USER WHERE name like '%"+name +"%'" ;		
+	getList(listQuery, res , '/views/index.ejs');		
 });
 
 
 
-function getList(getQuery, res){		
+function getList(getQuery, res, viewejs){		
 	
-	fs.readFile(__dirname + '/views/index.ejs', 'utf8', function(error, data) {
+	fs.readFile(__dirname + viewejs , 'utf8', function(error, data) {
 		
 		res.writeHead(200, {'Content-Type': 'text/html' });		
 		

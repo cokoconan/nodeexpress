@@ -82,7 +82,7 @@ function getList(getQuery, res, viewejs){
 			console.log("==============================");
 
 			res.end(ejs.render( data , {
-				'rows': rows
+				'rows': rows 
 			}));
 });
 
